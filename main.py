@@ -194,13 +194,33 @@
 # calc.addition(1,3)
 
 #Параметры по умолчанию
-class Calculator:
-    def addition(self, a=0, b=0):
-        print(a + b)
-calc = Calculator()
-calc.addition(1,3)
-calc.addition(1)
-calc.addition()
+# class Calculator:
+#     def addition(self, a=0, b=0):
+#         print(a + b)
+# calc = Calculator()
+# calc.addition(1,3)
+# calc.addition(1)
+# calc.addition()
+
+# *args **kwargs
+# class Calculator:
+#     def addition(self, *args, **kwargs):
+#         print(sum(args),kwargs)
+#
+# calc = Calculator()
+# calc.addition(1,2,3,11,3,2,5,1,2,33,1,**{"qw":2})
+
+
+
+class Person:
+    def set_attr(self, name, age):
+        self.name = name
+        self.age = age
+person_1 = Person()
+person_1.set_attr("Вася", 14)
+
+print(person_1.name, person_1.age)
+
 
 
 
