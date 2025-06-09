@@ -163,29 +163,44 @@
 # name4.name = "Maggi"
 # name4.method()
 
-class Person:
-    message_counter = 0
+# class Person:
+#     message_counter = 0
+#
+#     def print_number_of_messages(self):
+#         print(self.message_counter)
+#
+# #создаем 2 экземпляра
+# id_1 = Person()
+# id_2 = Person()
+#
+# #к каждому экземпляру присваивается значение
+# id_1.message_counter = 5
+# id_2.message_counter = 10
+# #прибавляем ко 2 значению
+# id_2.message_counter += 10
+# id_2.message_counter += 21
+# id_2.message_counter += 33
+# id_2.message_counter += 48
+#
+# #выводим на экран значение
+# id_1.print_number_of_messages()
+# id_2.print_number_of_messages()
 
-    def print_number_of_messages(self):
-        print(self.message_counter)
+#Позиционные параметры
+# class Calculator:
+#     def addition(self, a, b):
+#         print(a + b)
+# calc = Calculator()
+# calc.addition(1,3)
 
-#создаем 2 экземпляра
-id_1 = Person()
-id_2 = Person()
-
-#к каждому экземпляру присваивается значение
-id_1.message_counter = 5
-id_2.message_counter = 10
-#прибавляем ко 2 значению
-id_2.message_counter += 10
-id_2.message_counter += 21
-id_2.message_counter += 33
-id_2.message_counter += 48
-
-#выводим на экран значение
-id_1.print_number_of_messages()
-id_2.print_number_of_messages()
-
+#Параметры по умолчанию
+class Calculator:
+    def addition(self, a=0, b=0):
+        print(a + b)
+calc = Calculator()
+calc.addition(1,3)
+calc.addition(1)
+calc.addition()
 
 
 
