@@ -212,15 +212,40 @@
 
 
 
-class Person:
-    def set_attr(self, name, age):
-        self.name = name
-        self.age = age
-person_1 = Person()
-person_1.set_attr("Вася", 14)
+# class Person:
+#     def set_attr(self, name, age):
+#         self.name = name
+#         self.age = age
+# person_1 = Person()
+# person_1.set_attr("Вася", 14)
+# print(person_1.name, person_1.age)
 
-print(person_1.name, person_1.age)
 
+# class Person:
+#     def set_attr(self, name, age):
+#         setattr(self, "name", name)
+#         setattr(self, "age", age)
+# person_1 = Person()
+# person_1.set_attr("Вася", 14)
+# print(person_1.name , person_1.age)
+
+
+class NewJournal:
+    count_money = 0
+    def set_attr(self, papa, mama, deda, baba):
+        self.papa = papa
+        self.mama = mama
+        self.deda = deda
+        self.baba = baba
+        count_money = self.papa + self.mama + self.deda + self.baba
+        print(count_money)
+    def check_money(self):
+        if count_money < 80:
+            print("Денег не хватает")
+        else:
+            print("Ура, денег хватает!")
+masha = NewJournal()
+masha.set_attr(10,20,30,40)
 
 
 
